@@ -1,0 +1,58 @@
+/**
+ * OOPSBannerApp UC5 – Render OOPS as Banner using Inline Array Initialization
+ *
+ * This use case extends UC4 by defining and populating the String array
+ * in a more concise way at the time of declaration using String.join()
+ * method to create each line of the banner.
+ *
+ * @author Developer
+ * @version 5.0
+ */
+
+public class OOPSBannerApp {
+
+    // Main method to run the banner display
+    public static void main(String[] args) {
+
+        // Define String Array variable to hold the OOPS banner lines
+        // Each line represents a row in the banner for the letters O, O, P, S
+        String[] lines = {
+            String.join("   ",
+                "  OOO  ",
+                "  OOO  ",
+                " PPPPP ",
+                " SSSSS "
+            ),
+            String.join("   ",
+                " O   O ",
+                " O   O ",
+                " P    P",
+                " S     "
+            ),
+            String.join("   ",
+                " O   O ",
+                " O   O ",
+                " PPPPP ",
+                " SSSSS "
+            ),
+            String.join("   ",
+                " O   O ",
+                " O   O ",
+                " P     ",
+                "     S "
+            ),
+            String.join("   ",
+                "  OOO  ",
+                "  OOO  ",
+                " P     ",
+                " SSSSS "
+            )
+        };
+
+        // Use a loop to print each line of the banner
+        // to create the visual effect for the message "OOPS"
+        for (String line : lines) {
+            System.out.println(line);
+        }
+    }
+}
